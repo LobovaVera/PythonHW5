@@ -69,3 +69,32 @@ t = Entry(root, textvariable = var)
 t.pack()
 
 root.mainloop()
+# графическое оформление
+# win = tk.Tk()
+# photo = tk.PhotoImage(file = 'candy2.png')
+# win.iconphoto(0, photo)
+# win.config( bg = '#F5CAF2')
+# win.title("Конфетки")
+# win.geometry("500x500+100+100")
+# win.resizable(0, 0)
+
+# btn1 = tk.Button(win,
+# f'{text}'= "Играем вдвоем",
+# bg = "pink",
+# font = ('Arial', 15, 'bold'),
+# relief = tk.RAISED,
+# bd = 10,
+# command = two_players_mode
+# )
+# btn1.pack()
+
+# btn2 = tk.Button(win,
+# f'{text}'= "Игра против бота",
+# bg = "pink",
+# font = ('Arial', 15, 'bold'),
+# relief = tk.RAISED,
+# bd = 10,
+# command = bot_mode)
+# btn2.pack()
+
+# win.mainloop()
