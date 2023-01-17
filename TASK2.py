@@ -15,7 +15,7 @@ win_list = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8
 ], [2,4,6]]
 
 def check_the_winner(score_list):
-   
+    print(score_list)
     for i in range(0, len(win_list)):
         if score_list[win_list[i][0]] == score_list[win_list[i][1]] == score_list[win_list[i][2]] == 1:
             label1.config(text = "Выиграл О")
@@ -27,18 +27,16 @@ def check_the_winner(score_list):
             win.update_idletasks()
             time.sleep(5)
             sys. exit()
-        else:
-            
-            if any(x == 0 for x in score_list):
-                label1.config(text = "Игра продолжается")
-                win.update_idletasks()
+    if any(x == 0 for x in score_list):
+        label1.config(text = "Игра продолжается")
+        win.update_idletasks()
+        
                    
-            else:
-                label1.config(text = "Ничья!")
-                label1.grid(row = 3, column = 0, stick = 'we')
-                win.update_idletasks()
-                time.sleep(5)
-                sys.exit()
+    elif all(x > 0 for x in score_list):
+        label1.config(text = "Ничья!")
+        win.update_idletasks()
+        time.sleep(5)
+        sys.exit()
             
 win = tk.Tk()
 win.title("Крестики-нолики")

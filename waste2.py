@@ -56,19 +56,19 @@
 
 # win.mainloop()
 
-from tkinter import *
+# from tkinter import *
 
-root = Tk()
-var = StringVar()
-var.set('hello')
+# root = Tk()
+# var = StringVar()
+# var.set('hello')
 
-l = Label(root, textvariable = var)
-l.pack()
+# l = Label(root, textvariable = var)
+# l.pack()
 
-t = Entry(root, textvariable = var)
-t.pack()
+# t = Entry(root, textvariable = var)
+# t.pack()
 
-root.mainloop()
+# root.mainloop()
 # графическое оформление
 # win = tk.Tk()
 # photo = tk.PhotoImage(file = 'candy2.png')
@@ -98,3 +98,8 @@ root.mainloop()
 # btn2.pack()
 
 # win.mainloop()
+score_list = [1,2,3,4,7]
+if all(x > 0 for x in score_list):
+    print ("true")
+else:
+    print("есть ноль")
