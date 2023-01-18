@@ -98,8 +98,16 @@
 # btn2.pack()
 
 # win.mainloop()
-score_list = [1,2,3,4,7]
-if all(x > 0 for x in score_list):
-    print ("true")
-else:
-    print("есть ноль")
+# score_list = [1,2,3,4,7]
+# if all(x > 0 for x in score_list):
+#     print ("true")
+# else:
+#     print("есть ноль")
+
+num_str = "120 34 5 0"
+num_list = num_str.split()
+for el in num_list:
+    if int(el):
+        print(el)
+
+print(num_list)
